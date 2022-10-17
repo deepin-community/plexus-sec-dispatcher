@@ -1,0 +1,47 @@
+Source: plexus-sec-dispatcher
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Ludovic Claude <ludovic.claude@laposte.net>
+Build-Depends:
+ debhelper (>= 11),
+ default-jdk,
+ default-jdk-doc,
+ junit (>= 3.8.2),
+ junit4,
+ libmaven-javadoc-plugin-java,
+ libmodello-maven-plugin-java,
+ libplexus-cipher-java,
+ libplexus-component-metadata-java,
+ libplexus-utils2-java,
+ libplexus-utils2-java-doc,
+ maven-debian-helper (>= 2.1)
+Standards-Version: 4.2.1
+Vcs-Git: https://salsa.debian.org/java-team/plexus-sec-dispatcher.git
+Vcs-Browser: https://salsa.debian.org/java-team/plexus-sec-dispatcher
+Homepage: https://github.com/codehaus-plexus/plexus-sec-dispatcher
+
+Package: libplexus-sec-dispatcher-java
+Architecture: all
+Depends: ${misc:Depends}, ${maven:Depends}
+Recommends: ${maven:OptionalDepends}
+Suggests: libplexus-sec-dispatcher-java-doc
+Description: Plexus Security Dispatcher Component used by Maven
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+
+Package: libplexus-sec-dispatcher-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}, ${maven:DocDepends}
+Recommends: ${maven:DocOptionalDepends}
+Suggests: libplexus-sec-dispatcher-java
+Description: Documentation for Plexus Security Dispatcher Component
+ The Plexus project provides a full software stack for creating and
+ executing software projects. Based on the Plexus container, the applications
+ can utilise component-oriented programming to build modular, reusable
+ components that can easily be assembled and reused.
+ .
+ This package contains the API documentation of libplexus-sec-dispatcher-java.

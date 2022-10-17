@@ -1,0 +1,10 @@
+Document: libplexus-sec-dispatcher-java
+Title: API Javadoc for Plexus Security Dispatcher Component
+Author: Plexus Security Dispatcher Component developers
+Abstract: This is the API Javadoc provided for the
+ libplexus-sec-dispatcher-java library.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libplexus-sec-dispatcher-java/api/index.html
+Files: /usr/share/doc/libplexus-sec-dispatcher-java/api/*
