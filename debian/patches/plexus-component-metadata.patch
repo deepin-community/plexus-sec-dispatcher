@@ -2,7 +2,7 @@ Description: Generate the component descriptor with plexus-component-metadata in
 Origin: backport, https://github.com/codehaus-plexus/plexus-pom/commit/3c5f784f
 --- a/pom.xml
 +++ b/pom.xml
-@@ -63,6 +63,18 @@
+@@ -105,6 +105,18 @@
            </execution>
          </executions>
        </plugin>
@@ -20,4 +20,4 @@ Origin: backport, https://github.com/codehaus-plexus/plexus-pom/commit/3c5f784f
 +      </plugin>
      </plugins>
    </build>
-   
+ </project>

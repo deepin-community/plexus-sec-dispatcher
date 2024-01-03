@@ -1,4 +1,4 @@
 version=3
 opts="uversionmangle=s{-(alpha|beta)-}{~$1}" \
-https://github.com/codehaus-plexus/plexus-sec-dispatcher/tags .*/(.*).tar.gz
+https://github.com/codehaus-plexus/plexus-sec-dispatcher/tags .*/(?:plexus-)?sec-dispatcher-(.*).tar.gz
 
