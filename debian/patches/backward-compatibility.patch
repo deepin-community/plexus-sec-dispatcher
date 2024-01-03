@@ -1,0 +1,36 @@
+--- a/src/main/java/org/sonatype/plexus/components/sec/dispatcher/DefaultSecDispatcher.java
++++ b/src/main/java/org/sonatype/plexus/components/sec/dispatcher/DefaultSecDispatcher.java
+@@ -50,18 +50,20 @@
+     /**
+      * DefaultHandler
+      */
+-    protected final PlexusCipher _cipher;
++    protected PlexusCipher _cipher;
+ 
+     /**
+      * All available dispatchers
+      */
+-    protected final Map<String, PasswordDecryptor> _decryptors;
++    protected Map<String, PasswordDecryptor> _decryptors;
+ 
+     /**
+      * Configuration file
+      */
+     protected String _configurationFile;
+ 
++    public DefaultSecDispatcher() {}
++
+     @Inject
+     public DefaultSecDispatcher( final PlexusCipher _cipher,
+                                  final Map<String, PasswordDecryptor> _decryptors,
+--- a/src/main/java/org/sonatype/plexus/components/sec/dispatcher/SecDispatcher.java
++++ b/src/main/java/org/sonatype/plexus/components/sec/dispatcher/SecDispatcher.java
+@@ -20,6 +20,8 @@
+  */
+ public interface SecDispatcher
+ {
++    public static String ROLE = SecDispatcher.class.getName();
++
+     String [] SYSTEM_PROPERTY_MASTER_PASSWORD = new String [] {"settings.master.password","settings-master-password"};
+     
+     String [] SYSTEM_PROPERTY_SERVER_PASSWORD = new String [] {"settings.server.password","settings-server-password"};

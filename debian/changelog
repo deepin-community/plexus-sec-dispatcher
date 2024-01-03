@@ -1,3 +1,33 @@
+plexus-sec-dispatcher (2.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Restored the SecDispatcher.ROLE constant (removed in 2.0)
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Sun, 08 May 2022 11:57:57 +0200
+
+plexus-sec-dispatcher (2.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Restored the DefaultSecDispatcher default constructor (removed in 2.0)
+  * Install a symlink to the jar at the old sonatype coordinates to help Gradle
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 04 May 2022 10:17:18 +0200
+
+plexus-sec-dispatcher (2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - Refreshed the patches
+    - Removed the dependency on junit
+    - New build dependency on libeclipse-sisu-maven-plugin-java
+    - Relocate the old org.sonatype.plexus:plexus-sec-dispatcher coordinates
+  * Removed the -java-doc package
+  * Updated the watch file
+  * Standards-Version updated to 4.6.0.1
+  * Switch to debhelper level 13
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 04 May 2022 01:02:22 +0200
+
 plexus-sec-dispatcher (1.4-4) unstable; urgency=medium
 
   * Team upload.
